@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3_구조선택자</title>
+    <style>
+        /* 구조선택자 */
+        .city > li:first-child {color: red;}
+        .city > li:nth-child(2) {color: green;}
+        .city > li:nth-child(4) {color: blue;}
+        .city > li:last-child {color: orange;}
+
+        ul:nth-child(3) > li:nth-child(3) {background:red;}
+        ul:nth-child(3) > li:nth-of-type(4) {background: blue;}
+        ul:nth-of-type(2) > em:nth-of-type(2) {background: green;}
+    </style>
+</head>
+<body>
+    <h3>구조선택자</h3>
+
+    <ul class="city">
+        <li>서울</li>
+        <li>대전</li>
+        <li>대구</li>
+        <li>부산</li>
+        <li>광주</li>
+    </ul>
+
+    <ul>
+        <li>한국</li>
+        <em>서울</em>
+        <li>미국</li>
+        <em>워싱턴</em>
+        <li>일본</li>
+        <em>도쿄</em>
+        <li>호주</li>
+        <em>시드니</em>
+        <li>중국</li>
+        <em>베이징</em>
+    </ul>    
+</body>
+</html>
