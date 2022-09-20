@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4_글자속성</title>
+    <!--
+        날짜 : 2022/09/20
+        이름 : 김철학
+        내용 : 글자속성 실습하기
+    -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+
+        .box1 > div:nth-child(1) {font-size: 16px;}
+        .box1 > div:nth-child(2) {font-size: 32px;}
+        .box1 > div:nth-child(3) {font-size: 100%;}
+        .box1 > div:nth-child(4) {font-size: 200%;}
+        .box1 > div:nth-child(5) {font-size: 2em;}
+
+        .box2 > div {font-size: 32px;}
+        .box2 > div:nth-child(1) {font-family: '궁서체';}
+        .box2 > div:nth-child(2) {font-family: '휴먼옛체';}
+        .box2 > div:nth-child(3) {font-family: 'Gugi', cursive;}
+        .box2 > div:nth-child(4) {font-family: 'Black And White Picture', sans-serif;}
+        .box2 > div:nth-child(5) {font-family: 'Dokdo', cursive;}
+
+        .box3 > div:nth-child(1) {font-weight: 100;}
+        .box3 > div:nth-child(2) {font-weight: 200;}
+        .box3 > div:nth-child(3) {font-weight: 400;}
+        .box3 > div:nth-child(4) {font-weight: bold;}
+        .box3 > div:nth-child(5) {font-weight: bolder;}
+
+        .box4 > div:nth-child(1) {font: bold 16px '궁서체';}
+        .box4 > div:nth-child(2) {font: normal 32px '돋움';}
+        .box4 > div:nth-child(3) {font: bold 200% '고딕체';}
+        .box4 > div:nth-child(4) {font: normal 32px 'Gugi';}
+        .box4 > div:nth-child(5) {font: normal 32px 'Dokdo';}
+
+        .box5 > p {
+            line-height: 16px;
+        }
+        .box5 > div {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            text-align: center;
+            /* 텍스트가 위치한 공간의 높이로 line-height를 지정하면 수직 가운데 정렬 */
+            line-height: 100px; 
+        }
+
+    </style>
+</head>
+<body>
+    <h3>글자속성</h3>
+
+    <h4>font-size</h4>
+    <div class="box box1">
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>        
+    </div>
+    
+    <h4>font-family</h4>
+    <div class="box box2">
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>        
+    </div>
+    <h4>font-weight</h4>
+    <div class="box box3">
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>        
+    </div>
+    <h4>font 통합속성</h4>
+    <div class="box box4">
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>
+        <div>Hello, 안녕하세요.</div>        
+    </div>
+
+    <h4>line-height 속성</h4>
+    <div class="box box5">
+        <p>
+            동해물과 백두산이 마르고 닳도록<br/>
+            하느님이 보우하사 우리나라 만세<br/>
+            무궁화 삼천리 화려강산<br/>
+            대한사람 대한으로 길이보전하세.
+        </p>
+
+        <div>Hello World</div>
+    </div>
+    
+</body>
+</html>
