@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4_Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper {
+            width: 800px;
+            height: auto;
+            background: #aaaaaa;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 780px;
+            height: 120px;
+            background: #eeeeee;            
+        }
+        main {
+            width: 100%;
+            height: auto;
+            background: #eeeeee;
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        main > aside {
+            float: left;
+            width: 220px;
+            height: 465px;
+            background: #fff;
+        }
+        
+        main > section {
+            float: right;
+            width: 530px;
+            height: auto;
+            background-color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        main > section > article {
+            width: 100%;
+            height: 200px;
+            margin-top: 10px;
+            background-color: #ccc;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: #eee;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h3>Header</h3>
+        </header>
+        <main>
+            <h3>Main</h3>
+            <aside>
+                <h4>Aside</h4>
+            </aside>
+            <section>
+                <h4>Section</h4>
+                <article>
+                    <h5>Article #1</h5>
+                </article>
+                <article>
+                    <h5>Article #2</h5>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <h3>Footer</h3>
+        </footer>    
+    </div>
+</body>
+</html>
