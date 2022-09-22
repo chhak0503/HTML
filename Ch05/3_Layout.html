@@ -21,22 +21,31 @@
         header {
             width: 780px;
             height: 120px;
-            background: #eee;            
+            background: #eeeeee;            
         }
         main {
             width: 100%;
             height: auto;
-            background: #eee;
+            background: #eeeeee;
             margin: 10px 0;
             padding: 10px;
             box-sizing: border-box;
+            overflow: hidden;
         }
-        main > section {
-            width: 100%;
-            height: 200px;
-            margin-top: 10px;
+
+        main > aside {
+            float: left;
+            width: 220px;
+            height: 400px;
             background: #fff;
         }
+        main > section {
+            float: right;
+            width: 530px;
+            height: 400px;
+            background-color: #fff;
+        }
+
 
         footer {
             width: 100%;
@@ -55,11 +64,11 @@
         </header>
         <main>
             <h3>Main</h3>
+            <aside>
+                <h4>Aside</h4>
+            </aside>
             <section>
-                <h4>Section #1</h4>
-            </section>
-            <section>
-                <h4>Section #2</h4>
+                <h4>Section</h4>
             </section>
         </main>
         <footer>
