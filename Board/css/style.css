@@ -1,0 +1,114 @@
+/* 태그 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px '돋움';
+}
+
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #111;}
+input, textarea {outline: none;}
+
+#wrapper {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* 헤더공통 */
+header {
+    width: 100%;
+    height: 35px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    box-sizing: border-box;
+}
+header > h3 {
+    float: left;
+    color: #777;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* 메인공통 */
+main {
+    width: 100%;
+    height: auto;
+}
+
+/* 푸터공통 */
+footer {
+    width: 100%;
+    height: 35px;
+    background: #f7f7f7;
+    border-top: 1px solid #ebebeb;
+    box-sizing: border-box;            
+}
+
+footer > p {
+    float: right;
+    color: #777;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* 로그인 */
+#user.login {
+    width: 360px;
+    height: auto;
+    border: 1px solid #cfded8;
+    margin: 100px auto;
+}
+#user.login > form {
+    position: relative;
+    width: 100%;
+    height: auto;            
+}
+#user.login > form > table {
+    margin-left: 50px;
+    margin-top: 26px;
+}
+#user.login > form > table tr {}
+#user.login > form > table tr > td {}
+#user.login > form > table tr > td > img {width: 20px;}
+#user.login > form > table tr > td > input {
+    width: 164px;
+    height: 24px;
+    border: 1px solid #e4eaec;
+    background: #f7f7f7;
+    margin-top: 4px;
+    margin-left: 6px;            
+}
+#user.login > form > .btnLogin {
+    position: absolute;
+    right: 46px;
+    top: 6px;
+    width: 64px;
+    height: 58px;
+    border: 1px solid #bebebe;
+    background: #fdfdfd;
+}
+#user.login > .info {
+    width: 100%;
+    height: 104px;
+    background: #f5f6fa;
+    border-top: 1px solid #cfded8;
+    margin-top: 32px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+#user.login > .info > h3 {}
+#user.login > .info > p {
+    margin: 10px 0;
+}
+#user.login > .info > a {
+    float: right;
+}
+
+/* 약관 */
+/* 회원가입 */
+/* 글목록 */
+/* 글쓰기 */
+/* 글보기 */
+/* 글수정 */
