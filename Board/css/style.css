@@ -31,6 +31,18 @@ header > h3 {
     margin-left: 10px;
 }
 
+header > p {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+header > p > .nick {
+    font-weight: bold;
+}
+header > p > .logout:hover {
+    text-decoration: underline;
+}
+
 /* 메인공통 */
 main {
     width: 100%;
@@ -232,6 +244,74 @@ footer > p {
 }
 
 /* 글목록 */
+#board.list {
+    position: relative;
+    width: 720px;
+    height: auto;            
+    margin: 60px auto;
+}
+#board.list > table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top: 2px solid #111;
+}
+
+#board.list > table caption {
+    text-align: left;
+    margin-bottom: 6px;
+}
+#board.list > table tr {}
+#board.list > table th {
+    width: auto;
+    height: 40px;
+    background: #e5ecef;
+    border-bottom: 1px solid #d1dee2;
+}
+#board.list > table th:nth-child(1) {}
+#board.list > table th:nth-child(2) {}
+#board.list > table th:nth-child(3) {}
+#board.list > table th:nth-child(4) {}
+#board.list > table th:nth-child(5) {}
+#board.list > table td {
+    width: auto;
+    height: 38px;
+    border-bottom: 1px solid #e9e9e9;
+    text-align: center;
+}
+
+#board.list > table td:nth-child(2) {text-align: left;}
+
+#board.list > .page {
+    text-align: center;
+    margin-top: 10px;
+}
+#board.list > .page > a {
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid #d7d7d7;
+    background: #f2f2f2;
+}
+#board.list > .page > .prev {}
+#board.list > .page > .next {}
+#board.list > .page > .num {}
+#board.list > .page > .current {
+    border: 1px solid #6d6d6d;
+    background: #888;
+    color: white;
+}
+
+#board.list > .btnWrite {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid #3b3c3f;
+    background: #4b545e;
+    color: #fff;
+}
 /* 글쓰기 */
 /* 글보기 */
 /* 글수정 */
