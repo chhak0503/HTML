@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4_css_기타_선택자</title>
+    <style>
+        /* 속성 선택자 */
+        input[name=userid] {
+            background: green;
+        }
+        
+        input[name=passwd] {
+            background: red;
+        }
+
+        input[type=submit] {
+            background: blue;
+        }
+
+        /* 반응 선택자 */
+        #tag1:active {
+            color: red;
+        }
+
+        #tag2:hover {
+            color: blue;
+        }
+
+        /* 가상 요소 선택자 */
+        #won > li::after {
+            content: '원';
+        }
+
+        #dollar > li::before {
+            content: '$';
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>4.CSS 기타 선택자</h3>
+    
+    <h4>속성 선택자</h4>
+    <form action="#">
+        <input type="text" name="userid"/><br>
+        <input type="password" name="passwd"/><br>
+        <input type="submit" value="로그인"/><br>
+    </form>
+
+    <h4>반응 선택자</h4>
+    <h1 id="tag1">active</h1>
+    <h1 id="tag2">hover</h1>
+
+
+    <h4>가상 요소 선택자</h4>
+    <ul id="won">
+        <li>2,000</li>
+        <li>3,000</li>
+        <li>4,000</li>
+    </ul>
+
+    <ul id="dollar">
+        <li>2,000</li>
+        <li>3,000</li>
+        <li>4,000</li>
+    </ul>
+
+
+</body>
+</html>

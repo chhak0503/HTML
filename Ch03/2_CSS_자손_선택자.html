@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2_CSS_자손_선택자</title>
+    <style>
+        /* 자식 선택자 */
+        body > h3 {
+            color: red;
+        }
+
+        section > h3 {
+            color: blue;
+        }
+
+        .text1 > em {
+            color: gray;
+        }
+
+        .text2 > em {
+            color: yellow;
+        }
+
+
+        /* 후손 선택자 */
+        .text1 b {
+            color: red;
+        }
+
+        .text2 b {
+            color: violet;
+        }        
+        
+        /* 
+            형제 선택자
+
+            + : 형제 1개 선택
+            ~ : 모든 형제 선택
+        */
+        section > h3 + p { 
+            background: skyblue;
+        }
+
+        section > h3 ~ p {
+            border: 1px solid black;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <h3>2.CSS 자손 선택자</h3>
+
+    <section>
+        <h3>애국가</h3>
+        <p class="text1">
+            동해물과 백두산이 마르고 닳도록<br>
+            <em>
+                무궁화 삼천리 화려강산<br>
+                <b>대한사람</b> 대한으로 길이 보전하세.
+            </em>
+        </p>
+        <p class="text2">
+            남산위에 저 소나무 철갑을 두른듯<br>
+            <em>
+                무궁화 삼천리 화려강산<br>
+                <b>대한사람</b> 대한으로 길이 보전하세.
+            </em>
+        </p>
+    </section>
+
+
+    
+</body>
+</html>
