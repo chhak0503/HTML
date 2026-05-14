@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>farmstory::main</title>
+    <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px '돋움';
+        }
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
+        input, textarea {outline: none;}
+
+        #container {
+            width: 980px;
+            height: auto;
+            border: 1px solid red;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        /* 헤더 */
+        header {
+            width: 100%;
+            height: 142px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        /* 메인 */
+        main {
+            width: 100%;
+            min-height: 500px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        
+        main > div {
+            width: 100%;
+            border: 1px solid green;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        main > div:nth-child(1) {height: 312px;}
+        main > div:nth-child(2) {height: 286px;}
+        main > div:nth-child(3) {height:  74px;}
+        main > div:nth-child(4) {height: 186px;}
+        main > div:nth-child(5) {height: 154px;}
+
+        /* 슬라이더  */
+        /* 장보기 배너 */
+        /* 바로가기  */
+        /* 최신글 목록  */
+        .latest {
+            display: flex;
+        }
+        .latest > article {
+            width: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+        }
+
+        /* 기타 정보 안내  */
+        .info {
+            display: flex;
+        }
+
+        .info > article {
+            width: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+        }
+        
+        .info > article:nth-child(2) {
+            width: 70%;
+        }
+
+        /* 푸터 */
+        footer {
+            width: 100%;
+            height: 120px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header></header>
+        <main>
+            <div class="slider"></div>
+            <div class="market"></div>
+            <div class="quick"></div>
+            <div class="latest">
+                <article></article>
+                <article></article>
+                <article></article>
+            </div>
+            <div class="info">
+                <article></article>
+                <article></article>
+                <article></article>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+    
+</body>
+</html>
