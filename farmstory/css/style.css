@@ -1,0 +1,180 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px '돋움';
+}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #111;}
+input, textarea {outline: none;}
+
+#container {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+header {
+    position: relative;
+    width: 100%;
+    height: 142px;
+    background: url('../images/head_top_line.png') no-repeat;            
+    margin-bottom: 10px;
+}
+
+header > .logo {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    margin-left: -95px;
+}
+
+header > p {
+    float: right;
+    margin-top: 16px;
+}
+header > p > a {}
+header > .text {
+    float: right;
+    clear: both;
+    margin-top: 10px;
+}
+header > .gnb {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+header > .gnb > li {  
+    float: left;      
+    width: 20%;
+    height: 100%;
+    background-image: url('../images/head_menu_line.png');
+    background-repeat: no-repeat;
+    background-position: 0 -7px;
+}
+header > .gnb > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-position: 0 8px;
+    background-repeat: no-repeat;
+}
+header > .gnb > li:nth-child(1) > a { background-image: url('../images/head_menu1.png'); }
+header > .gnb > li:nth-child(2) > a { background-image: url('../images/head_menu2.png'); }
+header > .gnb > li:nth-child(3) > a { background-image: url('../images/head_menu3.png'); }
+header > .gnb > li:nth-child(4) > a { background-image: url('../images/head_menu4.png'); }
+header > .gnb > li:nth-child(5) > a { background-image: url('../images/head_menu5.png'); }
+header > .gnb > li:nth-child(1) > a:hover { background-image: url('../images/head_menu1_ov.png'); }
+header > .gnb > li:nth-child(2) > a:hover { background-image: url('../images/head_menu2_ov.png'); }
+header > .gnb > li:nth-child(3) > a:hover { background-image: url('../images/head_menu3_ov.png'); }
+header > .gnb > li:nth-child(4) > a:hover { background-image: url('../images/head_menu4_ov.png'); }
+header > .gnb > li:nth-child(5) > a:hover { background-image: url('../images/head_menu5_ov.png'); }
+
+
+/* 메인 */
+main {
+    width: 100%;
+    min-height: 500px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+main > div {
+    width: 100%;
+    border: 1px solid green;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+main > div:nth-child(1) {height: 312px;}
+main > div:nth-child(2) {height: 286px;}
+main > div:nth-child(3) {height:  74px;}
+main > div:nth-child(4) {height: 186px;}
+main > div:nth-child(5) {height: 154px;}
+
+/* 슬라이더  */
+
+/* 장보기 배너 */
+
+/* 바로가기  */
+.quick {
+    display: flex;
+}
+.quick > a {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.quick > a:nth-child(1) { background-image: url('../images/main_banner_sub1_bg.jpg'); }
+.quick > a:nth-child(2) { background-image: url('../images/main_banner_sub2_bg.jpg'); }        
+
+/* 최신글 목록  */
+.latest {
+    display: flex;
+}
+.latest > article {
+    position: relative;
+    width: 100%;
+}
+
+.latest > article > a {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.latest > article > img {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+.latest > article > table {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    color: #6a6a6a;
+}
+
+.latest > article > table tr {
+    
+}
+
+.latest > article > table tr > td {            
+}
+.latest > article > table tr > td:nth-child(2) {
+    display: block;
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+}
+
+
+/* 기타 정보 안내  */
+.info {
+    display: flex;
+}
+
+.info > article {
+    width: 100%;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+
+.info > article:nth-child(2) {
+    width: 70%;
+}
+
+/* 푸터 */
+footer {
+    width: 100%;
+    height: 120px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
